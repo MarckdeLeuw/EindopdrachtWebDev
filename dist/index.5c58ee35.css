@@ -1,3 +1,160 @@
+@import "https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --primary-color-filters: #e95420;
+  --primary-color-section: #6e2449;
+  --primary-color-text-dark: #3e162e;
+  --primary-color-main-container: #3e162e;
+  --primary-color-section-container: #e95420;
+  --primary-color-text-block: #dfd6da;
+  --primary-color-text-light: #dfd6da;
+  --primary-color-menu-block: #333;
+}
+
+body {
+  background: var(--primary-color-main-container);
+  color: var(--primary-color-text-dark);
+  font-family: Roboto, sans-serif;
+  font-size: 27px;
+}
+
+.box-intro {
+  line-height: 1.6em;
+}
+
+.section-left, .section-right, .section-mid, .section-recipe {
+  margin: 10px;
+  padding: 5px;
+}
+
+header {
+  background: var(--primary-color-menu-block);
+  color: var(--primary-color-text-light);
+  height: 50px;
+  z-index: 1;
+  padding: 20px;
+  font-size: 25px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar ul {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  margin: 20px 0;
+  display: flex;
+}
+
+.navbar li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a:visited {
+  color: unset;
+}
+
+.article-intro {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.box-intro {
+  width: 50%;
+}
+
+.filters-chosen {
+  background: var(--primary-color-filters);
+  color: var(--primary-color-text-light);
+  z-index: 1;
+  margin-top: 20px;
+  position: fixed;
+  top: 70px;
+}
+
+.search-recipes {
+  background: var(--primary-color-filters);
+  color: var(--primary-color-text-light);
+  z-index: 1;
+  margin-top: 20px;
+  padding: 10px;
+  position: fixed;
+  top: 70px;
+  right: 0;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.container-sections, .container-sections-one, .container-sections-two {
+  background: var(--primary-color-section-container);
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+}
+
+.article-recipes, .article-questions {
+  margin: 20px;
+  padding: 0;
+}
+
+.box-recipe {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.article-list-elements {
+  height: 1000px;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.box-category, .box-1 {
+  width: auto;
+  background: var(--primary-color-text-block);
+  text-align: left;
+  margin: 10px;
+  padding: 20px;
+}
+
+.box-recipe, .box-question, .box-recipe-ingredients, .box-picture-recipe, .box-preparation {
+  background: var(--primary-color-text-block);
+  margin: 20px;
+  padding: 20px;
+}
+
+.box-intro {
+  background: var(--primary-color-main-container);
+  color: var(--primary-color-text-light);
+  margin: 20px;
+  padding: 20px;
+}
+
+img {
+  width: 1000px;
+}
 
 /*# sourceMappingURL=index.5c58ee35.css.map */

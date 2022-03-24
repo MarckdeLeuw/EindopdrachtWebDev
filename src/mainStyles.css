@@ -1,0 +1,270 @@
+/*table content
+0.  Import font
+1.  Reset
+2.  Global styles
+3.  Typography
+4.  Layout
+    4.1 Header, sticky
+    4.2 Selected items, vast
+    4.3  Container selections
+5.  Components
+6.  Responsive
+
+ctr+f zoeken
+
+*/
+/*==========================================================
+    0.  Import font
+==========================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+/*==========================================================
+    1.  Reset
+==========================================================*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*==========================================================
+    2.  Colors & Fonts
+==========================================================*/
+:root{
+    --primary-color-filters: #e95420;
+    --primary-color-section:#6e2449;
+    --primary-color-text-dark:#3e162e;
+    --primary-color-main-container:#3e162e;
+    --primary-color-section-container:#e95420;
+    --primary-color-text-block:#dfd6da;
+    /*   --primary-color-text-block:#6e2449;*/
+    --primary-color-text-light:#dfd6da;
+    --primary-color-menu-block:#333333;
+}
+
+/*==========================================================
+    3.  Typography
+==========================================================*/
+body{
+    /*    font-size: 20px;*/
+    font-family: 'Roboto', sans-serif;
+    background: var(--primary-color-main-container);
+    color: var(--primary-color-text-dark);
+    font-size: 27px;
+}
+/*h1{
+    font-size: 45px;
+}*/
+.box-intro{
+    line-height: 1.6em;
+}
+
+/*==========================================================
+    4.  Layout
+==========================================================*/
+
+.section-left,.section-right,.section-mid,.section-recipe{
+    padding: 5px;
+    margin:  10px;
+}
+
+header{
+    background: var(--primary-color-menu-block);
+    color: var(--primary-color-text-light);
+    position: sticky;
+    height: 50px;
+    top: 0px;
+    z-index: 1;
+    padding: 20px;
+    font-size: 25px;
+}
+/*==========================================================
+    4.1  Header
+==========================================================*/
+.navbar{
+    position: relative;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 250px;
+    margin: 20px 0;
+}
+.navbar li{
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar a:visited{
+    color: unset;
+}
+/*=======================
+==================================*/
+
+/*Zet intro op midden pagina*/
+.article-intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+/*geeft aan hoe breed de text wordt in into*/
+.box-intro{
+    /*  width: 500px;*/
+    width: 50%;
+
+}
+
+/*==========================================================
+    4.2  selected items
+    width gerelateerd aan margin left container-selections
+    Let op express buiten de container selection vanwege fixed/sticky gedrag
+==========================================================*/
+.filters-chosen{
+    background: var(--primary-color-filters);
+    color: var(--primary-color-text-light);
+    position: fixed;
+    top: 70px;
+    /*    left: 0px;*/
+    z-index: 1;
+    margin-top: 20px;
+
+    /*    width: 150px;*/
+}
+/*==========================================================
+    4.2b  search button
+    width gerelateerd aan margin left container-selections
+    Let op express buiten de container selection vanwege fixed/sticky gedrag
+==========================================================*/
+.search-recipes{
+    background: var(--primary-color-filters);
+    color: var(--primary-color-text-light);
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    /*    left: 0px;*/
+    z-index: 1;
+    margin-top: 20px;
+    padding: 10px;
+    /*    width: 150px;*/
+}
+
+button{
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+/*==========================================================
+    4.3  Container selections
+        Om selections left en right
+        zet ze naast elkaar en onder elkaar in responsive
+==========================================================*/
+.container-sections,.container-sections-one,.container-sections-two {
+    /*gerelateerd aan sticky*/
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    background: var(--primary-color-section-container);
+
+}
+/*==========================================================
+    *** zie Details voor verhouding sections
+==========================================================*/
+
+/*doet niet zoveel nog*/
+.article-recipes,.article-questions{
+    /*    border: 5px blue solid;*/
+    padding: 0px;
+    margin: 20px;
+    /*    display: flex;
+        flex-direction: column;
+        align-items: center;*/
+}
+/*Bepaald hoe de lijsten verdeeld worden, let op de height die bij de flex-direction column hoort,
+Deze kan vreemde dingen doen
+*/
+.box-recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.article-list-elements{
+    padding: 0px;
+    margin: 0px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/*naamgeving nog even gerelateerd aan javascript, ander kiezen straks*/
+/*was .box-1*/
+.box-category,.box-1{
+    width: auto;
+    padding: 20px;
+    margin:  10px;
+    background: var(--primary-color-text-block);
+    text-align: left;
+}
+/*Kan je de padding en margin beetje mee veranderen doet nog niet zoveel*/
+.box-recipe,.box-question,.box-recipe-ingredients,.box-picture-recipe,.box-preparation{
+    padding: 20px;
+    margin:  20px;
+    background: var(--primary-color-text-block);
+}
+.box-intro{
+
+    padding: 20px;
+    margin:  20px;
+    background: var(--primary-color-main-container);
+    color: var(--primary-color-text-light);
+
+}
+/*==========================================================
+    5.  Components
+==========================================================*/
+
+img{
+    width: 1000px;
+}
+
+/*
+
+!*==========================================================
+    6.  Responsive
+==========================================================*!
+@media(max-width: 2300px) {
+    body{
+        font-size: 40px;
+    }
+    .article-list-elements {
+        padding: 10px;
+        margin: 20px;
+        display: flex;
+        height: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .container-sections, .container-section-one,.container-sections-two {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        !*  justify-content: space-between;*!
+    }
+    .box-category,.box-1{
+        width: 400px;
+        padding: 20px;
+        margin:  10px;
+        background: var(--primary-color-text-block);
+    }
+    img{
+        width: 400px;
+    }
+}
+*/
+
