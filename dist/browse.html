@@ -6,9 +6,121 @@
     <link rel="stylesheet" href="/browse.b3d496f8.css">
     <title>Let's find a recipe!</title>
 </head>
-<body>
 
-browse red
+<header class="header">
+    <nav class="navbar">
+        <div>
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/questions.html">MOOD</a></li>
+                <li><a href="/list.html">FRIDGE</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<article class="article-intro">
+    <div class="box-intro">
+        <h1>SEARCH THE CATALOGUE </h1>
+        <h3>
+            With the help of the selectors below you can quickly find the desired dish. Are all selectors filled? Then press the search button at the top right.
+        </h3>
+    </div>
+</article>
+
+<article class="filters-chosen" id="list-Selected">
+    <h3>Selected </h3>
+    <h5>Cuisine</h5>
+    <div id="selected-cuisine"></div>
+    <h5>Types</h5>
+    <div id="selected-types"></div>
+    <h5>Intolerance</h5>
+    <div id="selected-intolerances"></div>
+    <h5>Diet</h5>
+    <div id="selected-diet"></div>
+    <h5>Queries</h5>
+    <div id="selected-queries"></div>
+    <h5>Ingredients</h5>
+    <div id="selected-ingredients"></div>
+    <h5>Max ready time</h5>
+    <div id="selected-time"></div>
+</article>
+
+<button class="search-recipes" id="fetch-recipes">Search recipes</button>
+
+<body>
+<div class="container-sections-one">
+
+    <section class="section-left">
+        <article class="article-list-elements" id="list">
+        </article>
+    </section>
+
+    <section class="section-mid">
+        <div class="article-questions">
+            <div class="box-question">
+
+                <h3>Search query</h3>
+                <form id="query-on-submit">
+                    <label for="query-input-field">
+                    </label>
+                    <input type="text" id="query-input-field" placeholder="for example: pizza">
+                    <div>
+                        <button>Add search query</button>
+                    </div>
+                </form>
+
+                <h3>Ingredients</h3>
+                <form id="ingredient-on-submit">
+                    <label for="ingredient-input-field">
+                    </label>
+                    <input type="text" id="ingredient-input-field" placeholder="for example tuna">
+                    <div>
+                        <button>Add ingredient</button>
+                    </div>
+                </form>
+
+                <h3>Max ready time (minutes)</h3>
+                <form id="time-on-submit">
+                    <label for="time-input-field">
+                    </label>
+                    <input type="number" id="time-input-field" placeholder="max 180">
+                    <div>
+                        <button>Add time(minutes)</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="box-category">
+                <h3>Chosen queries</h3>
+                <div id="list-selected-queries"></div>
+            </div>
+
+            <div class="box-category">
+                <h3>Chosen ingredients</h3>
+                <div id="list-selected-ingredients"></div>
+            </div>
+
+            <div class="box-category">
+                <h3>Chosen max ready time</h3>
+                <div id="max-ready-time"></div>
+            </div>
+        </div>
+    </section>
+
+</div>
+<div class="container-sections-two">
+    <section class="section-right">
+        <article class="article-recipes">
+            <div class="box-recipe">
+                <h1>Recipes</h1>
+                <ul id="ingredients"></ul>
+            </div>
+        </article>
+    </section>
+</div>
+
+
 
 <script src="/browse.08816237.js" defer=""></script>
 </body>

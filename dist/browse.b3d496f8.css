@@ -1,5 +1,70 @@
-body {
-  color: red;
+.section-left {
+  background: var(--primary-color-section);
+  flex: 5;
+}
+
+.section-mid, .section-right {
+  background: var(--primary-color-section);
+  flex: 2;
+}
+
+.box-question {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+}
+
+.container-sections-one {
+  text-align: center;
+  background-image: url("shutterstock-books.434940a6.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 350px 50px 0;
+}
+
+.container-sections-two {
+  text-align: center;
+  background-image: url("shutterstock-books.434940a6.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 50px 0;
+}
+
+@media (max-width: 1600px) {
+  body {
+    font-size: 40px;
+  }
+
+  .article-list-elements {
+    height: unset;
+    flex-flow: wrap;
+    align-items: stretch;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+  }
+
+  .container-sections, .container-sections-one, .container-sections-two {
+    flex-flow: column wrap;
+    display: flex;
+  }
+
+  .box-category, .box-1 {
+    width: 400px;
+    background: var(--primary-color-text-block);
+    margin: 10px;
+    padding: 20px;
+  }
+
+  img {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=browse.b3d496f8.css.map */

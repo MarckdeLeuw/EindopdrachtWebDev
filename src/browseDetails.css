@@ -1,3 +1,101 @@
-body{
-    color: red;
+/*==========================================================
+    Verdeling sections
+==========================================================*/
+
+.section-left{
+    flex: 5;/*van 4.5 naar...*/
+    background: var(--primary-color-section);
+}
+.section-mid{
+    flex: 2;
+    background: var(--primary-color-section);
+}
+.section-right{
+    flex: 2;
+    background: var(--primary-color-section);
+}
+
+
+
+/*==========================================================
+    Uitlijnen vragen
+==========================================================*/
+
+.box-question{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+button{
+    margin: 20px;
+    padding: 10px;
+}
+
+
+/*.container-sections{
+    background-position: center;
+    background-size: cover;
+    background-image: url("./assets/shutterstock-books.jpg");
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 350px;
+    padding-bottom: 0px;
+    text-align: center;
+}*/
+.container-sections-one{
+    background-position: center;
+    background-size: cover;
+    background-image: url("./assets/shutterstock-books.jpg");
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 350px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.container-sections-two{
+    background-position: center;
+    background-size: cover;
+    background-image: url("./assets/shutterstock-books.jpg");
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+
+
+
+/*==========================================================
+    6.  Responsive
+==========================================================*/
+@media(max-width: 1600px) {
+    body{
+        font-size: 40px;
+    }
+    .article-list-elements {
+        padding: 10px;
+        margin: 20px;
+        display: flex;
+        height: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .container-sections, .container-sections-one,.container-sections-two {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /*  justify-content: space-between;*/
+    }
+    .box-category,.box-1{
+        width: 400px;
+        padding: 20px;
+        margin:  10px;
+        background: var(--primary-color-text-block);
+    }
+    img{
+        width: 400px;
+    }
 }
