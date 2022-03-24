@@ -6,9 +6,66 @@
     <link rel="stylesheet" href="questionsDetails.css"/>
     <title>How are you feeling today?</title>
 </head>
-<body>
 
-questions yellow
+<header class="header">
+    <nav class="navbar">
+        <div>
+            <ul>
+                <li><a href=index.html>HOME</a></li>
+                <li><a href=browse.html>CATALOGUE</a></li>
+                <li><a href=list.html>FRIDGE</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<article class="article-intro">
+    <div class="box-intro">
+        <h1>In the mood for food?</h1>
+        <h3>
+            You have indicated that you want a little help in finding a dish.
+            That's what we're going to do! Let's start filling out the questions right away to see what you're looking forward to today!
+        </h3>
+    </div>
+</article>
+
+<body >
+<div class="container-sections">
+
+    <section class="section-mid">
+        <article class="article-questions">
+            <div class="box-question">
+
+                <h1 >QUESTION:</h1>
+                <span id="question">[question]</span>
+                <h1><p>POSSIBLE ANSWERS:</p></h1>
+                <ul id="myList"></ul>
+                <form id="myForm">
+                </form>
+                <div id ='button-location'>
+                    <button id="next-question">Next question</button>
+                </div>
+
+            </div>
+        </article>
+    </section>
+
+
+</div>
+
+<div class="container-sections">
+
+    <section class="section-recipe">
+        <article class="article-recipes">
+            <div class="box-recipe">
+                <h1>Recipes</h1>
+                <ul id="ingredients"></ul>
+
+            </div>
+        </article>
+    </section>
+</div>
+
 
 <script src="questionsMain.js" type="module"></script>
 </body>
