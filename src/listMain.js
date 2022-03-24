@@ -1,4 +1,6 @@
-import {inventory} from './dataInput'
+import {inventory} from './dataInput';
+
+import {apiKey} from "./dataInput";
 
 import axios from "axios";
 
@@ -214,9 +216,7 @@ async function fetchRecipeByIngredients( ) {
     try{
         const response = await axios.get("https://api.spoonacular.com/recipes/findByIngredients",{
             params: {
-                //apiKey: "6e41860e63d24f118286264f375838f2",
-                apiKey: "0ea888df639e4008aaa3ba44e12aba2b",
-                //apiKey:"ad01ecc0b5524566b68a2abde8fd592e",
+                apiKey: apiKey,
                 ingredients: ingredients,       //A comma-separated list of ingredients that the recipes should contain.
                 number: 2       //hoeveel recepten teruggegven
             },

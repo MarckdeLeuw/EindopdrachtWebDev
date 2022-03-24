@@ -1,5 +1,7 @@
 import {filters, inventory} from "./dataInput";
 
+import {apiKey} from "./dataInput";
+
 import axios from "axios";
 
 /*===TABLE OF CONTENT=====================
@@ -422,9 +424,7 @@ async function fetchRecipeByComplexSearch( ) {
     try{
         const response = await axios.get("https://api.spoonacular.com/recipes/complexSearch",{
             params: {
-                //apiKey: "6e41860e63d24f118286264f375838f2",
-                apiKey: "0ea888df639e4008aaa3ba44e12aba2b",
-                //apiKey:"ad01ecc0b5524566b68a2abde8fd592e",
+                apiKey: apiKey,
                 query: query,       //The (natural language) recipe search query.
                 cuisine: cuisine,       //The (natural language) recipe search query.
                 //excludeCuisine: excludeCuisine,

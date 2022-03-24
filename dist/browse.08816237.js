@@ -847,9 +847,7 @@ async function fetchRecipeByComplexSearch() {
     try {
         const response = await _axiosDefault.default.get("https://api.spoonacular.com/recipes/complexSearch", {
             params: {
-                //apiKey: "6e41860e63d24f118286264f375838f2",
-                apiKey: "0ea888df639e4008aaa3ba44e12aba2b",
-                //apiKey:"ad01ecc0b5524566b68a2abde8fd592e",
+                apiKey: _dataInput.apiKey,
                 query: query,
                 cuisine: cuisine,
                 //excludeCuisine: excludeCuisine,
@@ -959,6 +957,8 @@ parcelHelpers.export(exports, "mainQuestions", ()=>mainQuestions
 parcelHelpers.export(exports, "questions", ()=>questions
 );
 parcelHelpers.export(exports, "filters", ()=>filters
+);
+parcelHelpers.export(exports, "apiKey", ()=>apiKey
 );
 const inventory = [
     {
@@ -1647,8 +1647,9 @@ const filters = [
             "Vegetarian"
         ]
     }
-]; /*==================================
-=====================================*/ 
+];
+const apiKey = "6e41860e63d24f118286264f375838f2"; // export const apiKey = "0ea888df639e4008aaa3ba44e12aba2b";
+ // export const apiKey = "ad01ecc0b5524566b68a2abde8fd592e";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {

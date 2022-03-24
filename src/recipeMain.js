@@ -1,3 +1,5 @@
+import {apiKey} from "./dataInput";
+
 import axios from "axios";
 
 /*===TABLE OF CONTENT=====================
@@ -36,9 +38,7 @@ async function fetchAnalyzedRecipeInstructions( ) {
     try{
         const response = await axios.get(requestInstructions,{
             params: {
-                //apiKey: "6e41860e63d24f118286264f375838f2",
-                apiKey: "0ea888df639e4008aaa3ba44e12aba2b",
-                //apiKey: "ad01ecc0b5524566b68a2abde8fd592e",
+                apiKey: apiKey,
             },
             headers: {
                 "Content-Type": "application/json"
@@ -85,9 +85,7 @@ async function fetchIngredientsById( ) {
         const response = await axios.get(requestIngredients,{
             //const response = await axios.get("https://api.spoonacular.com/recipes/715381/ingredientWidget.json",{
             params: {
-                //apiKey: "6e41860e63d24f118286264f375838f2",
-                apiKey: "0ea888df639e4008aaa3ba44e12aba2b",
-                //apiKey:"ad01ecc0b5524566b68a2abde8fd592e",
+                apiKey: apiKey,
             },
             headers: {
                 "Content-Type": "application/json"      //zonder dit werkt het niet!
