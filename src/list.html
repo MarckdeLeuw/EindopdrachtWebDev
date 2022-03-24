@@ -6,9 +6,55 @@
     <link rel="stylesheet" href="listDetails.css"/>
     <title>What's in the fridge en cupboard?</title>
 </head>
-<body>
 
-list blue
+<header class="header">
+    <nav class="navbar">
+        <div>
+            <ul>
+                <li><a href=index.html>HOME</a></li>
+                <li><a href=questions.html>MOOD</a></li>
+                <li><a href=browse.html>CATALOGUE</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<article class="article-intro">
+    <div class="box-intro">
+        <h1>WHAT'S IN YOUR FRIDGE & PANTRY??</h1>
+        <h3>
+            Transform what's left in your fridge and pantry to a surprising dish!
+            Select what's in stock, press the search button at the top right and let's find out what's possible!
+        </h3>
+    </div>
+</article>
+
+<article class="filters-chosen" id="list-Selected">
+</article>
+
+<button  class = "search-recipes" id="fetch-recipes">Search recipes</button>
+
+<body >
+
+<div class="container-sections-one">
+    <section class="section-left">
+        <article class="article-list-elements" id="list">
+
+        </article>
+    </section>
+</div>
+
+<div class="container-sections-two">
+    <section class="section-right">
+        <article class="article-recipes">
+            <div class="box-recipe">
+                <h1>Recipes</h1>
+                <ul id="ingredients"></ul>
+            </div>
+        </article>
+    </section>
+</div>
+
+
 
 <script src="listMain.js" type="module"></script>
 </body>

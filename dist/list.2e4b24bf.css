@@ -1,5 +1,58 @@
-body {
-  color: #00f;
+.section-left {
+  background: var(--primary-color-section);
+  flex: 4;
+}
+
+.section-right {
+  background: var(--primary-color-section);
+  flex: 1;
+}
+
+.container-sections-one {
+  text-align: center;
+  background-image: url("Fridge.a61781a3.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 350px 50px 0;
+}
+
+.container-sections-two {
+  text-align: center;
+  background-image: url("Fridge.a61781a3.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 50px 0;
+}
+
+@media (max-width: 2450px) {
+  body {
+    font-size: 40px;
+  }
+
+  .article-list-elements {
+    height: unset;
+    flex-flow: wrap;
+    align-items: stretch;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+  }
+
+  .container-sections, .container-section-one, .container-sections-two {
+    flex-flow: column wrap;
+    display: flex;
+  }
+
+  .box-category, .box-1 {
+    width: 400px;
+    background: var(--primary-color-text-block);
+    margin: 10px;
+    padding: 20px;
+  }
+
+  img {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=list.2e4b24bf.css.map */
