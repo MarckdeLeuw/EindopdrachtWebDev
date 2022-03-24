@@ -1,4 +1,9 @@
-#Inleiding
+#Inhoudsopgave
+1. Inleiding
+2. Benodigdheden om de applicatie te kunnen gebruiken
+3. Stappenplan installatie
+
+#1. Inleiding
 
 Met deze applicatie is het mogelijk om op 3 manieren naar gerechten te zoeken.
 
@@ -21,16 +26,16 @@ Bij de derde methode "How are you feeling today?" verschijnt een vraag in beeld,
 ![screenshot](./assets/HowAreYouFeeling.PNG)
 Bij alle drie de methodes verschijnen de gerechten in een lijst. Bij elk gerecht staat een button "Get more information". Als hierop wordt gedrukt verschijnt de link "Go te recipe information". Als hierop wordt gedrukt, verschijnt het gerecht met de ingredienten en de bereidingswijze op een nieuwe pagina.
 
-#Benodigdheden om de applicatie te kunnen gebruiken
+#2. Benodigdheden om de applicatie te kunnen gebruiken
 
 Om gebruik te maken van deze applicatie is een key nodig.
-Deze is hard coded aanwezig in de applicatie (op 5 posities).
-Wanneer van een andere key gebruikt gemaakt wordt, zullen deze allemaal gewijzigd moeten worden.
+Deze wordt op 5 posities in de pagina's browseMain.js (1x), listMain.js (1x), questionMain.js (1x) en recipeMain.js (2x) aangeroepen.
+In de datInput.js is bij paragraaf 4 de betreffende input van de apiKey te wijzigen.
 Voor het gebruik van de applicatie wordt uitgegaan dat er gebruikt wordt gemaakt van  Webstorm.
 
-#Stappenplan installatie
+#3. Stappenplan installatie
 
-NPM en Parcel en axios zijn al geconfigureerd. De bijbehorende dependencies moeten nog worden geïnstalleerd in de terminal:
+NPM, Parcel en Axios zijn al geconfigureerd. De bijbehorende dependencies moeten nog worden geïnstalleerd in de terminal:
 
 `npm install`
 
@@ -42,7 +47,7 @@ De locatie van de server wordt weergegeven in de terminal, bv:
 
 `Server running at http://localhost:1234`
 
-Door op de link te drukken wordt de applicatie geopende in de browser.
+Door op de link te drukken wordt de applicatie geopend in de browser.
 
 De applicatie kan afgebroken worden door in de terminal te drukken:
 
