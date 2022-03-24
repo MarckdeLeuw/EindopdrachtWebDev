@@ -1,3 +1,66 @@
-body{
-    color: green;
+
+.recipe-title{
+    background: var(--primary-color-main-container);
+    color: var(--primary-color-text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
 }
+
+
+/*==========================================================
+    *** Verdeling sections
+==========================================================*/
+.section-left{
+    flex: 1;
+    background: var(--primary-color-section);
+}
+.section-right{
+    flex: 3;
+    background: var(--primary-color-section);
+}
+
+.container-sections{
+    background-position: top;
+    background-size: contain;
+    background-image: url("./assets/nicolas-gras-UiGsP8TvOJQ-unsplash.jpg");
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
+    padding-top: 350px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+/*==========================================================
+    6.  Responsive
+==========================================================*/
+@media(max-width: 1800px) {
+    body{
+        font-size: 40px;
+    }
+    .article-list-elements {
+        padding: 10px;
+        margin: 20px;
+        display: flex;
+        height: unset;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    .container-sections, .container-section-one,.container-sections-two {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /*  justify-content: space-between;*/
+    }
+    .box-category,.box-1{
+        width: 400px;
+        padding: 20px;
+        margin:  10px;
+        background: var(--primary-color-text-block);
+    }
+    img{
+        width: 570px;
+    }
+}
+
