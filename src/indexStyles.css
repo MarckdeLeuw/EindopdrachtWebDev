@@ -3,7 +3,7 @@
 ==========================================================*/
 
 .section-left{
-    flex: 2;/*van 4.5 naar...*/
+    flex: 2;
     background: var(--primary-color-section);
 }
 .section-mid{
@@ -30,7 +30,7 @@ Achtergrond plaatjes
 }
 
 .article-picture a:visited{
-    /*color: var(--primary-color-filters);*/
+
     color: var(--primary-color-text-light);
 }
 
@@ -39,9 +39,7 @@ Achtergrond plaatjes
     background-position: center;
     background-size: cover;
     background-image: url("./assets/Fridge.jpg");
-    /*    background-repeat: no-repeat;*/
-    /* background-repeat: no-repeat;*/
-    /*background-position: 10px 10px;*/
+
 
     padding-top: 200px;
     text-align: center;
@@ -51,8 +49,7 @@ Achtergrond plaatjes
     background-position: center;
     background-size: cover;
     background-image: url("./assets/emotieslijs-video-1536x854.jpg");
-    /* background-repeat: no-repeat;*/
-    /*background-position: 10px 10px;*/
+
 
     padding-top: 200px;
     text-align: center;
@@ -62,8 +59,7 @@ Achtergrond plaatjes
     background-position: center;
     background-size: contain;
     background-image: url("./assets/shutterstock-books.jpg");
-    /* background-repeat: no-repeat;*/
-    /*background-position: 10px 10px;*/
+
 
     padding-top: 200px;
     text-align: center;
@@ -77,18 +73,6 @@ Achtergrond plaatjes
     padding: 10px;
 
 }
-
-/*==========================================================
-    Uitlijnen vragen
-==========================================================*/
-
-/*
-.article-picture{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}*/
 
 
 /*==========================================================
@@ -111,7 +95,7 @@ Achtergrond plaatjes
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        /*  justify-content: space-between;*/
+
     }
     .box-category,.box-1{
         width: 400px;

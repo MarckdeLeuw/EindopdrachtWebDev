@@ -1,18 +1,26 @@
-/*table content
-0.  Import font
-1.  Reset
-2.  Global styles
-3.  Typography
-4.  Layout
-    4.1 Header, sticky
-    4.2 Selected items, vast
-    4.3  Container selections
-5.  Components
-6.  Responsive
+/*===table content=====================
+
+Dit css bestand is leidend voor alle html pagina's in dit project.
+Er kunnen dan ook verwijzingen in voorkomen die misschien niet op een specifieke pagina voorkomen.
+Voor css specifiek voor een bepaalde pagina (bv tbv responsive) wordt verwezen naar de Detail css van die specifieke pagina
+
+0.	    Import fonts
+1.	    Reset
+2.	    Colors
+3.	    Body
+4.	    Header
+4.1	    Navbar
+4.2	    Intro
+4.3	    Selected Items
+4.4	    Search recipes
+5.0	    Sections aritcles (naast elkaar /onder elkaar articles)
+6.0 	Overige aritcles en boxes
+7.0 	Components
 
 ctr+f zoeken
 
-*/
+===========================*/
+
 /*==========================================================
     0.  Import font
 ==========================================================*/
@@ -25,7 +33,7 @@ ctr+f zoeken
     padding: 0;
 }
 /*==========================================================
-    2.  Colors & Fonts
+    2.  Colors
 ==========================================================*/
 :root{
     --primary-color-filters: #e95420;
@@ -40,7 +48,7 @@ ctr+f zoeken
 }
 
 /*==========================================================
-    3.  Typography
+    3.  Body
 ==========================================================*/
 body{
     /*    font-size: 20px;*/
@@ -56,14 +64,14 @@ body{
     line-height: 1.6em;
 }
 
-/*==========================================================
-    4.  Layout
-==========================================================*/
-
 .section-left,.section-right,.section-mid,.section-recipe{
     padding: 5px;
     margin:  10px;
 }
+
+/*==========================================================
+    4.  Header
+==========================================================*/
 
 header{
     background: var(--primary-color-menu-block);
@@ -76,7 +84,7 @@ header{
     font-size: 25px;
 }
 /*==========================================================
-    4.1  Header
+    4.1  Navbar
 ==========================================================*/
 .navbar{
     position: relative;
@@ -103,6 +111,7 @@ header{
     color: unset;
 }
 /*=======================
+4.2     Intro
 ==================================*/
 
 /*Zet intro op midden pagina*/
@@ -120,7 +129,7 @@ header{
 }
 
 /*==========================================================
-    4.2  selected items
+    4.3  Selected items
     width gerelateerd aan margin left container-selections
     Let op express buiten de container selection vanwege fixed/sticky gedrag
 ==========================================================*/
@@ -129,14 +138,13 @@ header{
     color: var(--primary-color-text-light);
     position: fixed;
     top: 70px;
-    /*    left: 0px;*/
     z-index: 1;
     margin-top: 20px;
 
-    /*    width: 150px;*/
+
 }
 /*==========================================================
-    4.2b  search button
+    4.4  Search button
     width gerelateerd aan margin left container-selections
     Let op express buiten de container selection vanwege fixed/sticky gedrag
 ==========================================================*/
@@ -146,21 +154,14 @@ header{
     position: fixed;
     right: 0px;
     top: 70px;
-    /*    left: 0px;*/
     z-index: 1;
     margin-top: 20px;
     padding: 10px;
-    /*    width: 150px;*/
 }
 
-button{
-    margin: 20px;
-    padding: 10px;
-    font-size: 25px;
-}
 
 /*==========================================================
-    4.3  Container selections
+    5.0  Container selections
         Om selections left en right
         zet ze naast elkaar en onder elkaar in responsive
 ==========================================================*/
@@ -175,15 +176,15 @@ button{
 /*==========================================================
     *** zie Details voor verhouding sections
 ==========================================================*/
+/*==========================================================
+    6.0 Overige aritcles en boxes
+==========================================================*/
 
-/*doet niet zoveel nog*/
+
 .article-recipes,.article-questions{
-    /*    border: 5px blue solid;*/
     padding: 0px;
     margin: 20px;
-    /*    display: flex;
-        flex-direction: column;
-        align-items: center;*/
+
 }
 /*Bepaald hoe de lijsten verdeeld worden, let op de height die bij de flex-direction column hoort,
 Deze kan vreemde dingen doen
@@ -201,8 +202,7 @@ Deze kan vreemde dingen doen
     flex-direction: column;
     flex-wrap: wrap;
 }
-/*naamgeving nog even gerelateerd aan javascript, ander kiezen straks*/
-/*was .box-1*/
+
 .box-category,.box-1{
     width: auto;
     padding: 20px;
@@ -225,46 +225,16 @@ Deze kan vreemde dingen doen
 
 }
 /*==========================================================
-    5.  Components
+    7.0  Components
 ==========================================================*/
 
 img{
     width: 1000px;
 }
 
-/*
-
-!*==========================================================
-    6.  Responsive
-==========================================================*!
-@media(max-width: 2300px) {
-    body{
-        font-size: 40px;
-    }
-    .article-list-elements {
-        padding: 10px;
-        margin: 20px;
-        display: flex;
-        height: unset;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: stretch;
-    }
-    .container-sections, .container-section-one,.container-sections-two {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        !*  justify-content: space-between;*!
-    }
-    .box-category,.box-1{
-        width: 400px;
-        padding: 20px;
-        margin:  10px;
-        background: var(--primary-color-text-block);
-    }
-    img{
-        width: 400px;
-    }
+button{
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
 }
-*/
 
