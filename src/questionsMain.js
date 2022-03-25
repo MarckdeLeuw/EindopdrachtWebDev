@@ -269,7 +269,7 @@ async function fetchRecipeByComplexSearch( ) {
                 type: type,
                 //maxReadyTime: maxReadyTime,//number
 
-                number: 2       //hoeveel recepten teruggegven
+                number: 10       //hoeveel recepten teruggeven
             },
             headers: {
                 "Content-Type": "application/json"      //zonder dit werkt het niet!

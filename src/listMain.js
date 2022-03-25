@@ -218,7 +218,7 @@ async function fetchRecipeByIngredients( ) {
             params: {
                 apiKey: apiKey,
                 ingredients: ingredients,       //A comma-separated list of ingredients that the recipes should contain.
-                number: 2       //hoeveel recepten teruggegven
+                number: 10       //hoeveel recepten teruggeven
             },
             headers: {
                 "Content-Type": "application/json"      //zonder dit werkt het niet!
